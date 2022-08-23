@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My_Favorite_Players</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -21,7 +18,7 @@
             <div class="bg-dark text-white  rounded">
                 <div class="row row-cols-3">
                     <div>
-                        <!-- <img class="mbappe img-fluid d-block" src="New folder/Group 12.png" alt=""> -->
+                        <!-- <img class="mbappe img-fluid d-block" src="./images/banner.jpg" alt=""> -->
                     </div>
                     <div>
                         <h1 class="text-bold text-center pt-5">My Favorite Players</h1>
@@ -34,8 +31,8 @@
         </section>
     </header>
 
-    <main>
-        <section class="row row-cols-2 mt-4">
+    <main class="mt-4 pt-4">
+        <section class="row row-cols-2 mt-4 ms-5 ps-5">
             <div class="container">
                 <div class="row row-cols-3 g-3">
                     <div>
@@ -105,12 +102,10 @@
                     </div>
                 </div>
             </div>
-
-
             <div class="row row-cols-1">
                 <div class="ul-list">
                     <div class="bg-dark text-white text-center">
-                        <h1>Selected Player</h1>
+                        <h2>Favorite Player</h2>
                         <img src="./images/underLine.jpg" alt="">
                         <ol id="player-list" class="ol-list">
                         </ol>
@@ -122,7 +117,7 @@
                 <div class="budget">
                     <div class="bg-dark text-white text-center">
 
-                        <h1>Budget</h1>
+                        <h2>Budget</h2>
                         <img src="./images/underLine.jpg" alt="">
                         <div class="row row-cols-2 g-1 m-3">
                             <div>
@@ -136,8 +131,8 @@
 
                         <div class="row row-cols-2 mt-2">
                             <h5>Player Expenses :</h5>
-                            <h5 class="pe-5">
-                                <span id="player-expences"></span>$0000
+                            <h5>
+                                <span id="player-expences"></span>$
                             </h5>
                         </div>
 
@@ -170,7 +165,7 @@
 
         </section>
     </main>
-
+    <script src="./js/calculate.js"></script>
 </body>
 
 </html>
