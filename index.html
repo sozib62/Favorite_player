@@ -34,6 +34,143 @@
         </section>
     </header>
 
+    <main>
+        <section class="row row-cols-2 mt-4">
+            <div class="container">
+                <div class="row row-cols-3 g-3">
+                    <div>
+                        <div class="card text-center ">
+                            <img src="./images/messi.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center"><span id="player1-name">Leo Messi</span></h5>
+                                <p class="text-center">36 Goals ~ 120 Assist</p>
+                                <button id="player1-btn" class="btn btn-primary">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card text-center ">
+                            <img src="./images/neymar.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center"><span id="player2-name">Naymer</span></h5>
+                                <p class="text-center">36 Goals ~ 120 Assist</p>
+
+                                <button id="player2-btn" class="btn btn-primary">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card text-center">
+                            <img src="./images/mbappe.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center"><span id="player3-name">Kylian Mbappe</span></h5>
+                                <p class="text-center">36 Goals ~ 120 Assist</p>
+
+                                <button id="player3-btn" class="btn btn-primary">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card text-center ">
+                            <img src="./images/machado.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center"><span id="player4-name">Victor Machado</span></h5>
+                                <p class="text-center">36 Goals ~ 120 Assist</p>
+
+                                <button id="player4-btn" class="btn btn-primary">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card text-center ">
+                            <img src="./images/ramos.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center"><span id="player5-name">Sergio Ramos</span></h5>
+                                <p class="text-center">36 Goals ~ 120 Assist</p>
+
+                                <button id="player5-btn" class="btn btn-primary">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card text-center ">
+                            <img src="./images/sanches.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center"><span id="player6-name">Renato Sanches</span></h5>
+                                <p class="text-center">36 Goals ~ 120 Assist</p>
+
+                                <button id="player6-btn" class="btn btn-primary">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row row-cols-1">
+                <div class="ul-list">
+                    <div class="bg-dark text-white text-center">
+                        <h1>Selected Player</h1>
+                        <img src="./images/underLine.jpg" alt="">
+                        <ol id="player-list" class="ol-list">
+                        </ol>
+
+                    </div>
+                </div>
+
+
+                <div class="budget">
+                    <div class="bg-dark text-white text-center">
+
+                        <h1>Budget</h1>
+                        <img src="./images/underLine.jpg" alt="">
+                        <div class="row row-cols-2 g-1 m-3">
+                            <div>
+                                <p>Per Player :
+                                    <span><input id="per-player-cost" type="text"></span>
+                                </p>
+                            </div>
+
+                        </div>
+                        <button id="btn-calculate" class="btn btn-primary ">Calculate</button>
+
+                        <div class="row row-cols-2 mt-2">
+                            <h5>Player Expenses :</h5>
+                            <h5 class="pe-5">
+                                <span id="player-expences"></span>$0000
+                            </h5>
+                        </div>
+
+                        <div class="row row-cols-2 g-0 m-4">
+                            <div>
+                                <p>Manager :
+                                    <input id="manager-cost" type="text">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row row-cols-2 g-1">
+                            <div class="ms-3">
+                                <p>Coacher :
+                                    <input id="coach-cost" type="text">
+                                </p>
+                            </div>
+                        </div>
+                        <button id="calculate-total" class="btn btn-primary m-3">Calculate Total</button>
+
+
+                        <div class="row row-cols-2 g-0 mt-2 ms-4">
+                            <h5>Total Cost :</h5>
+                            <h5 class="pe-5">$<span id="total-cost">0000</span></h5>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
 </body>
 
 </html>
