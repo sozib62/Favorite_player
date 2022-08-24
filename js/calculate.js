@@ -1,33 +1,34 @@
+//////////////////
 
-function setPlayerNameToPlayerList(btnId, nameId) {
-    document.getElementById(btnId).addEventListener('click', function () {
-        const playersList = document.getElementById('player-list');
-        const nameElement = document.getElementById(nameId);
+document.getElementById('calculate-btn').addEventListener('click', function () {
+    const perPlayerCostField = getElementByIdInputField('per-player-cost');
 
-        const name = nameElement.innerText;
-        const li = document.createElement('li');
-        li.innerText = name;
-        const list = document.querySelectorAll('#player-list li')
-        if (list.length < 5) {
-            playersList.appendChild(li);
-            const button = document.getElementById(btnId);
-            button.setAttribute('disabled', true);
-            button.style.backgroundColor = 'black';
-        }
-        else {
-            alert('dont be added more then five player')
-        }
+    const list = document.querySelectorAll('#player-list li')
+    const totalCost = perPlayerCostField * list.length;
 
-    })
-}
-setPlayerNameToPlayerList('player1-btn', 'player1-name');
-setPlayerNameToPlayerList('player2-btn', 'player2-name');
-setPlayerNameToPlayerList('player3-btn', 'player3-name');
-setPlayerNameToPlayerList('player4-btn', 'player4-name');
-setPlayerNameToPlayerList('player5-btn', 'player5-name');
-setPlayerNameToPlayerList('player6-btn', 'player6-name');
+    const totalExpences = document.getElementById('total-expences');
+    const totalExpencesString = totalExpences.innerText;
+    const totalPlayerCost = parseInt(totalExpences);
+    totalExpences.innerText = totalCost;
+    return totalCost;
+})
 
+////////////////////////////
 
+document.getElementById('calculate-total-btn').addEventListener('click', function () {
+    const totalExpences = document.getElementById('total-expences').innerText;
+    const totalPlayerCost = parseInt(totalExpences);
+
+    const managerCostField = getElementByIdInputField('manager-cost')
+    const coachCostField = getElementByIdInputField('coach-cost')
+
+    const totalTeamCost = managerCostField + coachCostField + totalPlayerCost;
+
+    const TotatCalculate = document.getElementById('total-cost')
+    const TotatCalculateString = TotatCalculate.innerText;
+    const TotatCalculateCost = parseInt(TotatCalculateString);
+    TotatCalculate.innerText = totalTeamCost;
+})
 
 
 
